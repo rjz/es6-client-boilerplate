@@ -15,7 +15,7 @@ Installation
 
 Install global dependencies (if you haven't already)
 
-    $ npm install -g webpack karma-cli
+    $ npm install -g webpack karma-cli babel-eslint
     $ npm install
 
 Testing
