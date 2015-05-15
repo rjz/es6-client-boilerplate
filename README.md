@@ -8,22 +8,18 @@ A boilerplate for ES6 projects that includes:
   * Babel (ES6 -> ES5)
   * Test runner (karma/jasmine)
   * Build (webpack)
-  * a license, contributing guidelines, and this exquisite readme
+  * a copy of the MIT license, contributing guidelines, and an exquisite readme
 
 Installation
 -------------------------------------------------------------------------------
 
-Install global dependencies (if you haven't already)
+Install and build:
 
-    $ npm install -g webpack karma-cli
     $ npm install
+    $ npm run build
 
 Testing
 -------------------------------------------------------------------------------
-
-Lint:
-
-    $ npm run lint
 
 Lint and run test suite:
 
