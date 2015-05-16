@@ -4,7 +4,10 @@ module.exports = function (config) {
     files: [
       { pattern: 'test-runner.js', watched: false }
     ],
-    frameworks: ['jasmine'],
+    frameworks: [
+      'jasmine',
+      'sinon'
+    ],
     singleRun: true,
     preprocessors: {
       'test-runner.js': ['webpack']

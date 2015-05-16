@@ -12,5 +12,8 @@
       2,
       "single"
     ]
+  },
+  "global": {
+    "sinon"
   }
 }
