@@ -1,24 +1,33 @@
 module.exports = function (config) {
   config.set({
+    autoWatch: true,
     browsers: ['PhantomJS'],
     files: [
-      { pattern: 'test-runner.js', watched: false }
+      'node_modules/es5-shim/es5-shim.js',
+      'src/*_spec.js'
     ],
     frameworks: [
       'jasmine',
       'sinon'
     ],
-    singleRun: true,
     preprocessors: {
-      'test-runner.js': ['webpack']
+      'src/*_spec.js': [ 'webpack' ]
     },
     webpack: {
       module: {
         loaders: [
-          { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' }
+          {
+            test: /\.js/,
+            exclude: /node_modules/,
+            loader: 'babel'
+          }
         ]
       },
-      watch: true
+      cache: true,
+      resolve: {
+        extensions: ['', '.js'],
+        modulesDirectories: ['node_modules']
+      }
     },
     webpackServer: {
       noInfo: true
