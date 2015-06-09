@@ -4,6 +4,7 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     files: [
       'node_modules/es5-shim/es5-shim.js',
+      'node_modules/custom-event-polyfill/custom-event-polyfill.js',
       'src/*_spec.js'
     ],
     frameworks: [
