@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "eslint ./src",
     "test": "karma start ./karma.config.js --single-run",
-    "build": "webpack -p"
+    "build": "webpack --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "karma-phantomjs-launcher": "0.1.4",
     "karma-sinon": "1.0.4",
     "karma-webpack": "1.5.1",
+    "object-assign": "^3.0.0",
     "sinon": "1.14.1",
     "webpack": "1.8.11"
   }
