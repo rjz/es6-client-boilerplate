@@ -1,6 +1,6 @@
 {
   "name": "es6-client-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "starting point for client-side es6 projects",
   "main": "index.js",
   "scripts": {
