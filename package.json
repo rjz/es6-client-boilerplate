@@ -33,6 +33,7 @@
     "karma-jasmine": "0.3.6",
     "karma-phantomjs-launcher": "0.2.1",
     "karma-sinon": "1.0.4",
+    "karma-spec-reporter": "0.0.20",
     "karma-webpack": "1.7.0",
     "object-assign": "3.0.0",
     "phantomjs": "1.9.17",

@@ -12,6 +12,7 @@ module.exports = function (config) {
       'jasmine',
       'sinon'
     ],
+    reporters: ['spec'],
     preprocessors: {
       'src/*_spec.js': [ 'webpack' ]
     },
