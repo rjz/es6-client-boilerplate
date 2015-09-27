@@ -3,4 +3,5 @@ dist
 travis.log
 npm-debug.log
 *.swp
+coverage
 

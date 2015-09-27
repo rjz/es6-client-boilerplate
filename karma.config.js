@@ -12,9 +12,9 @@ module.exports = function (config) {
       'jasmine',
       'sinon'
     ],
-    reporters: ['spec'],
+    reporters: ['spec', 'coverage'],
     preprocessors: {
-      'src/*_spec.js': [ 'webpack' ]
+      'src/*_spec.js': [ 'webpack', 'coverage' ],
     },
     webpack: {
       module: {
@@ -34,6 +34,11 @@ module.exports = function (config) {
     },
     webpackServer: {
       noInfo: true
+    },
+    coverageReporter: {
+      reporters: [
+        { type: 'lcovonly', subdir: '.', file: 'lcov.info' }
+      ]
     }
   });
 };
