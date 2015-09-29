@@ -3,9 +3,7 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['PhantomJS'],
     files: [
-      'node_modules/es5-shim/es5-shim.js',
-      'node_modules/es6-shim/es6-shim.js',
-      'node_modules/custom-event-polyfill/custom-event-polyfill.js',
+      'node_modules/babel-core/browser-polyfill.min.js',
       'src/*_spec.js'
     ],
     frameworks: [
