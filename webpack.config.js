@@ -2,12 +2,15 @@ var path = require('path');
 var project = require('./package');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+    app: [ './src/main.js' ],
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: project.name + '.js'
+    filename: "[name].js",
+    chunkFilename: "[id].js"
   },
-  module: {
+   module: {
     loaders: [
       { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
