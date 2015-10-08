@@ -36,6 +36,6 @@
     "object-assign": "3.0.0",
     "phantomjs": "1.9.17",
     "sinon": "1.14.1",
-    "webpack": "1.11.0"
+    "webpack": "1.12.2"
   }
 }
