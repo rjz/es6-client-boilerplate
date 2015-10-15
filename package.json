@@ -4,7 +4,8 @@
   "description": "starting point for client-side es6 projects",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint ./src",
+    "lint": "eslint ./src",
+    "pretest": "npm run lint",
     "test": "karma start ./karma.config.js --single-run",
     "build": "webpack --config webpack.production.config.js"
   },
