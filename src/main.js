@@ -1,10 +1,9 @@
-import Dispatcher from './Dispatcher';
+import Dispatcher from './Dispatcher'
 
-let dispatcher = new Dispatcher();
+let dispatcher = new Dispatcher()
 let subscriber = (message) => {
-  console.log(message);
-};
+  console.log(message)
+}
 
-dispatcher.subscribe(subscriber);
-dispatcher.publish('Hello, World!');
-
+dispatcher.subscribe(subscriber)
+dispatcher.publish('Hello, World!')

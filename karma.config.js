@@ -12,7 +12,7 @@ module.exports = function (config) {
     ],
     reporters: ['spec', 'coverage'],
     preprocessors: {
-      'src/*_spec.js': [ 'webpack', 'coverage' ],
+      'src/*_spec.js': [ 'webpack', 'coverage' ]
     },
     webpack: {
       module: {
@@ -38,6 +38,5 @@ module.exports = function (config) {
         { type: 'lcovonly', subdir: '.', file: 'lcov.info' }
       ]
     }
-  });
-};
-
+  })
+}

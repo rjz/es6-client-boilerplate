@@ -4,7 +4,7 @@
   "description": "starting point for client-side es6 projects",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src",
+    "lint": "standard",
     "pretest": "npm run lint",
     "test": "karma start ./karma.config.js --single-run",
     "build": "webpack --config webpack.production.config.js"
@@ -21,9 +21,7 @@
   },
   "devDependencies": {
     "babel-core": "5.2.15",
-    "babel-eslint": "3.0.1",
     "babel-loader": "5.0.0",
-    "eslint": "0.20.0",
     "jasmine": "2.3.1",
     "jasmine-core": "2.3.0",
     "karma": "0.13.2",
@@ -37,6 +35,7 @@
     "object-assign": "3.0.0",
     "phantomjs": "1.9.17",
     "sinon": "1.14.1",
+    "standard": "^5.3.1",
     "webpack": "1.12.2"
   }
 }

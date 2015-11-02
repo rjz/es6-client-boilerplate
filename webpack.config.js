@@ -1,16 +1,15 @@
-var path = require('path');
-var project = require('./package');
+var path = require('path')
 
 module.exports = {
   entry: {
-    app: [ './src/main.js' ],
+    app: [ './src/main.js' ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: "[name].js",
-    chunkFilename: "[id].js"
+    filename: '[name].js',
+    chunkFilename: '[id].js'
   },
-   module: {
+  module: {
     loaders: [
       { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
@@ -20,5 +19,4 @@ module.exports = {
     moduleDirectories: ['node_modules']
   },
   plugins: []
-};
-
+}
