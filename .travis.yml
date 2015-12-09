@@ -3,7 +3,7 @@ sudo: false
 
 node_js:
   - '0.12'
-  - '4.0'
+  - '4.1'
 
 before_script:
   - export PATH=$PATH:$PWD/node_modules/.bin:$PWD/node_modules/karma/bin
