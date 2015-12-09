@@ -1,6 +1,6 @@
 /*global sinon:false it:false, expect:false, describe:false, beforeEach:false */
 
-import Dispatcher from './Dispatcher'
+import Dispatcher from './dispatcher'
 
 describe('Dispatcher', () => {
   let dispatcher = null

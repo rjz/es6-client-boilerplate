@@ -1,4 +1,4 @@
-import Dispatcher from './Dispatcher'
+import Dispatcher from './dispatcher'
 
 let dispatcher = new Dispatcher()
 let subscriber = (message) => {
