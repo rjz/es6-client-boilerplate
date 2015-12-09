@@ -3,7 +3,6 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['PhantomJS'],
     files: [
-      'node_modules/babel-core/browser-polyfill.min.js',
       'src/*_spec.js'
     ],
     frameworks: [
@@ -20,7 +19,11 @@ module.exports = function (config) {
           {
             test: /\.js/,
             exclude: /node_modules/,
-            loader: 'babel'
+            loader: 'babel',
+            query: {
+              plugins: [ 'transform-runtime' ],
+              presets: [ 'es2015' ]
+            }
           }
         ]
       },
