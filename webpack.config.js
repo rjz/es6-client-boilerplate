@@ -13,7 +13,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js/,
-        exclude: /node_modules/,
+        include: /src/,
         loader: 'babel',
         query: {
           plugins: [ 'transform-runtime' ],

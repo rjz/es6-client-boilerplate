@@ -18,7 +18,7 @@ module.exports = function (config) {
         loaders: [
           {
             test: /\.js/,
-            exclude: /node_modules/,
+            include: /src/,
             loader: 'babel',
             query: {
               plugins: [ 'transform-runtime' ],
